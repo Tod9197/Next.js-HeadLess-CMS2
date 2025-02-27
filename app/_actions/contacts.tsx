@@ -17,13 +17,13 @@ export async function createContactData(_prevState: any, formData: FormData) {
   if (!rawFormData.lastname) {
     return {
       status: "error",
-      message: "姓を入力してください",
+      message: "名字を入力してください",
     };
   }
   if (!rawFormData.firstname) {
     return {
       status: "error",
-      message: "名を入力してください",
+      message: "名前を入力してください",
     };
   }
   if (!rawFormData.company) {
