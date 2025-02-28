@@ -29,7 +29,7 @@ export default function ContactForm() {
         <div className={styles.horizontal}>
           <div className={styles.item}>
             <label className={styles.label} htmlFor="lastname">
-              姓
+              名字<span className={styles.textRed}>* 必須</span>
             </label>
             <input
               className={styles.textfield}
@@ -40,7 +40,7 @@ export default function ContactForm() {
           </div>
           <div className={styles.item}>
             <label className={styles.label} htmlFor="firstname">
-              名
+              お名前<span className={styles.textRed}>* 必須</span>
             </label>
             <input
               className={styles.textfield}
@@ -63,7 +63,7 @@ export default function ContactForm() {
         </div>
         <div className={styles.item}>
           <label className={styles.label} htmlFor="email">
-            メールアドレス
+            メールアドレス<span className={styles.textRed}>* 必須</span>
           </label>
           <input
             className={styles.textfield}

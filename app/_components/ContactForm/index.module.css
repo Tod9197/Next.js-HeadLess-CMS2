@@ -21,7 +21,10 @@
 .label {
   font-size: 14px;
 }
-
+.textRed {
+  color: red;
+  margin-left: 10px;
+}
 .textfield {
   border: 1px solid var(--color-border);
   padding: 8px;
