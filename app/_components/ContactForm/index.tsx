@@ -9,11 +9,6 @@ const initialState = {
   message: "",
 };
 
-const initialSatate = {
-  status: "",
-  message: "",
-};
-
 export default function ContactForm() {
   const [state, formAction] = useFormState(createContactData, initialState);
   console.log(state);
