@@ -9,6 +9,11 @@ const initialState = {
   message: "",
 };
 
+const initialSatate = {
+  status: "",
+  message: "",
+};
+
 export default function ContactForm() {
   const [state, formAction] = useFormState(createContactData, initialState);
   console.log(state);
@@ -74,7 +79,7 @@ export default function ContactForm() {
         </div>
         <div className={styles.item}>
           <label className={styles.label} htmlFor="message">
-            メッセージ
+            メッセージ <span className={styles.textRed}>* 必須</span>
           </label>
           <textarea className={styles.textarea} name="message" id="message" />
         </div>
