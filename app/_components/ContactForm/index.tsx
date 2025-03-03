@@ -1,6 +1,6 @@
 "use client";
 
-import { createContactData } from "@/app/_actions/contacts";
+import { createContactData } from "@/app/_actions/contact";
 import { useFormState } from "react-dom";
 import styles from "./index.module.css";
 
@@ -16,9 +16,11 @@ export default function ContactForm() {
   if (state.status === "success") {
     return (
       <p className={styles.success}>
-        お問い合わせいただき、ありがとうございます。
+        お問い合わせいただき、誠にありがとうございます。
         <br />
-        お返事まで今しばらくお待ちください。
+        担当者からご連絡いただきさせていただきます。
+        <br />
+        今しばらくお待ちください。
       </p>
     );
   }
