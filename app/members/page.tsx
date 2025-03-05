@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 export default async function Page() {
   const data = await getMembersList({ limit: MEMBERS_LIST_LIMIT });
   return (
-    <div className={styles.conatiner}>
+    <div className={styles.container}>
       {data.contents.length === 0 ? (
         <p className={styles.empty}>メンバーが登録されていません</p>
       ) : (
